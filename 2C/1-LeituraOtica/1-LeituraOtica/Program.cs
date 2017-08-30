@@ -10,57 +10,42 @@ namespace _1_LeituraOtica
     {
         static void Main(string[] args)
         {
-            int n;
-            n = int.Parse(Console.ReadLine());
-            string[] resposta = new string [1000001];
-            for (int i=0; i < n; i++)
+            int n,i=0;
+            string[] resp = new string[1000001];
+            n = Convert.ToInt32(Console.ReadLine());
+
+            while (i<n)
             {
                 int A, B, C, D, E;
 
-                A = int.Parse(Console.ReadLine());
-                B = int.Parse(Console.ReadLine());
-                C = int.Parse(Console.ReadLine());
-                D = int.Parse(Console.ReadLine());
-                E = int.Parse(Console.ReadLine());
+                A = Convert.ToInt32(Console.ReadLine());
+                B = Convert.ToInt32(Console.ReadLine());
+                C = Convert.ToInt32(Console.ReadLine());
+                D = Convert.ToInt32(Console.ReadLine());
+                E = Convert.ToInt32(Console.ReadLine());
 
-                if ((A <= 100) && (B >= 155) && (C >= 155) && (D >= 155) && (E >= 155)) 
-                {
-                    resposta[i] = "A";
-                }
-                    
+                if ((A <= 100) && (B >= 155) && (C >= 155) && (D >= 155) && (E >= 155))
+                    resp[i] = "A";
                 else if ((A >= 155) && (B <= 100) && (C >= 155) && (D >= 155) && (E >= 155))
-                {
-                    resposta[i] = "B";
-                }
+                    resp[i] = "B";
                 else if ((A >= 155) && (B >= 155) && (C <= 100) && (D >= 155) && (E >= 155))
-                {
-                   resposta[i] = "C";
-                }
+                    resp[i] = "C";
                 else if ((A >= 155) && (B >= 155) && (C >= 155) && (D <= 100) && (E >= 155))
-                {
-                   resposta[i] = "D";
-                }
+                    resp[i] = "D";
                 else if ((A >= 155) && (B >= 155) && (C >= 155) && (D >= 155) && (E <= 100))
-                {
-                    resposta[i] = "E";
-                }
+                    resp[i] = "E";
                 else
-                {
-                    resposta[i] = "*";
-                }
+                    resp[i] = "*";
+                i++;
 
             }
 
-            for (int i=0; i<n; i++)
+            i = 0;
+            while(i<n)
             {
-                Console.WriteLine("{0}", resposta[i]);
+                Console.WriteLine(resp[i]);
+                i++;
             }
-
-
-
-            }
-
-
         }
     }
-
+}

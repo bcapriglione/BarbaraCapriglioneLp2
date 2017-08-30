@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6110A987-D8FF-47B7-917B-3142ADC39684}</ProjectGuid>
+    <ProjectGuid>{B1D3630D-314F-415F-9626-A457B8DEDD95}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_1_LeituraOtica</RootNamespace>
